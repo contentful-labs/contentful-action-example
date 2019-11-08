@@ -1,16 +1,19 @@
 name: CI
 
-on: [push]
+on: [push, pull_request]
 
 jobs:
   build:
 
     runs-on: ubuntu-latest
-    name: Migration Testing
+    name: Contentful Migration Example
     steps:
-    - name: Migration
+    - name: Contentful Migration
       id: migrate
       uses: shy/contentful-action@master
       with: # Set the secret as an input
+        SPACE_ID: ${{ secrets.SPACE_ID }}
+        MANGEMENT_API_KEY: ${{ secrets.MANGEMENT_API_KEY }}
+      env: # Set the secret as an input
         SPACE_ID: ${{ secrets.SPACE_ID }}
         MANGEMENT_API_KEY: ${{ secrets.MANGEMENT_API_KEY }}
