@@ -11,3 +11,6 @@ jobs:
     - name: Migration
       id: migrate
       uses: shy/contentful-action@v1
+      with: # Set the secret as an input
+        SPACE_ID: ${{ secrets.SPACE_ID }}
+        MANGEMENT_API_KEY: ${{ secrets.MANGEMENT_API_KEY }}
