@@ -16,4 +16,4 @@ jobs:
       uses: shy/contentful-action@master
       env: # Set the secret as an input
         SPACE_ID: ${{ secrets.SPACE_ID }}
-        MANGEMENT_API_KEY: ${{ secrets.MANGEMENT_API_KEY }}
+        MANAGEMENT_API_KEY: ${{ secrets.MANAGEMENT_API_KEY }}
