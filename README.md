@@ -18,6 +18,7 @@ Getting started
 To use the continuous delivery pipeline of this project you need accounts for the following services:
 
 - [Contentful](https://www.contentful.com)
+- GitHub
 
 ### Setup
 
