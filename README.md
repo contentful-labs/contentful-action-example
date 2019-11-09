@@ -19,6 +19,7 @@ To use the continuous delivery pipeline of this project you need accounts for th
 
 - Python3
 - [Contentful](https://www.contentful.com)
+- GitHub Actions
 
 ### Setup
 
