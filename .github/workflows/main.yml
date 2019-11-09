@@ -8,6 +8,12 @@ jobs:
     runs-on: ubuntu-latest
     name: Contentful Migration Example
     steps:
+
+
+    - name: Check out code into the directory
+      uses: actions/checkout@v1
+
+
     - name: Contentful Migration
       id: migrate
       uses: shy/contentful-action@master
