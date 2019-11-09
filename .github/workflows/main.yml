@@ -1,4 +1,4 @@
-name: CI
+name: Contentful Migration Example
 
 on: [push]
 
