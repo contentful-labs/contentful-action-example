@@ -1,6 +1,6 @@
-name: CI
+name: Contentful Migration Example
 
-on: [push, pull_request]
+on: [push]
 
 jobs:
   build:
