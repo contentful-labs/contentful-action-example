@@ -20,18 +20,6 @@ To use the continuous delivery pipeline of this project you need accounts for th
 - Python3
 - [Contentful](https://www.contentful.com)
 
-And to automate the Contentful operations install the [Contentful CLI](https://github.com/contentful/contentful-cli/) globally using [npm]().
-
-```bash
-npm install -g contentful-cli
-```
-
-Use the `contentful login` command to authenticate the CLI with Contentful.
-
-```bash
-contentful login
-```
-
 ### Setup
 
 * Fork and clone this repository
