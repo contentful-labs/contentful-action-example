@@ -10,6 +10,8 @@ This example contains a folder of Migration Scripts. Whenever a new script is ad
 
 You can read our [conceptual guide](https://www.contentful.com/developers/docs/concepts/deployment-pipeline/) on how to utilize Contentful Environments inside your continuous delivery pipeline.
 
+You can futher expand this example by integrating other GitHub actions, such as testing and deployment options.
+
 Getting started
 =====
 
