@@ -6,7 +6,7 @@ An example application for how you can integrating content migrations in your co
 What is this about?
 =====
 
-This example deploys a simple flask site integrated with Contentful onto Heroku utilizing GitHub Actions.
+This example contains a folder of Migration Scripts. Whenever a new script is added to this repo, it's evaluated against a Contentful space. If the migration is added via pull request, a new enviroment is created on Contentful and the migration is run against that. If a new script is added to master (either directly or via merging a PR) then a new enviroment is created, migrations are run against that enviroment and then the alias for master is updated to point to that new enviroment.
 
 You can read our [conceptual guide](https://www.contentful.com/developers/docs/concepts/deployment-pipeline/) on how to utilize Contentful Environments inside your continuous delivery pipeline.
 
