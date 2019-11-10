@@ -45,7 +45,11 @@ Since we're using GitHub Actions, we'll be able to use the existing [Contentful-
         SPACE_ID: ${{ secrets.SPACE_ID }}
         MANAGEMENT_API_KEY: ${{ secrets.MANAGEMENT_API_KEY }}
 ```
-You can view the main.yml inside the worflow directory inside .github for example of a working confirguration. You'll also need to add your `SPACE_ID` and `MANAGEMENT_API_KEY` in the secrets tab of the settings on your repository.
+You can view the [main.yml](.github/workflows/main.yml) for example of a full working confirguration.
+
+![Screenshot of GitHub Secret Panel](images/Secrets.png)
+
+Lastly you'll also need to add your `SPACE_ID` and `MANAGEMENT_API_KEY` in the secrets tab of the settings on your repository.
 
 License
 =======
