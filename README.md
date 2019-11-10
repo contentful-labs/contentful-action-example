@@ -33,20 +33,19 @@ To use the continuous delivery pipeline of this project you need accounts for th
 * Import the provided content model (`./import/export.json`) into the newly created space
   * `$ contentful space import --content-file ./import/export.json`
 
-#### Local development environment (optional)
-
-* Create a virtual environment
-  * `$ virtualenv env`
-* Activate the virtual environment
-  * `source env/bin/activate`
-* Install all Python dependencies
-  * `pip install -r requirements.txt`
-* Start the Flask app
-  * `python myapp.py`
-* Rename config file `.env.example` to `.env` and add missing keys
-
 #### The continuous delivery pipeline
 
+Since we're using GitHub Actions, we'll be able to use the existing [Contentful-Action]() repo. Just add the following code into your github workflow.
+
+```yml
+    - name: Contentful Migration
+      id: migrate
+      uses: shy/contentful-action@master
+      env: # Set the secret as an input
+        SPACE_ID: ${{ secrets.SPACE_ID }}
+        MANAGEMENT_API_KEY: ${{ secrets.MANAGEMENT_API_KEY }}
+```
+You can view the main.yml inside the worflow directory inside .github for example of a working confirguration. You'll also need to add your `SPACE_ID` and `MANAGEMENT_API_KEY` in the secrets tab of the settings on your repository.
 
 License
 =======
