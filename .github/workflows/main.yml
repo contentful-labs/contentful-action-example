@@ -13,7 +13,7 @@ jobs:
 
     - name: Contentful Migration
       id: migrate
-      uses: contentful/contentful-action@master
+      uses: contentful/contentful-action@v1
       env: # Set the secret as an input
         SPACE_ID: ${{ secrets.SPACE_ID }}
         MANAGEMENT_API_KEY: ${{ secrets.MANAGEMENT_API_KEY }}
