@@ -51,7 +51,7 @@ You can view the [main.yml](.github/workflows/main.yml) for example of a full wo
 
 ![Screenshot of GitHub Secret Panel](images/Secrets.png)
 
-You'll also need to add your `SPACE_ID` and `MANAGEMENT_API_KEY` in the secrets tab of the settings on your repository.
+You'll also need to add your `SPACE_ID` and `MANAGEMENT_API_KEY` in the secrets tab of the settings on your repository. You can optionally add a `MIGRATIONS_DIR` secret if you're storing your migration scripts somewhere besides the migrations folder.
 
 License
 =======
