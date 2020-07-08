@@ -17,3 +17,4 @@ jobs:
       env: # Set the secret as an input
         SPACE_ID: ${{ secrets.SPACE_ID }}
         MANAGEMENT_API_KEY: ${{ secrets.MANAGEMENT_API_KEY }}
+        MIGRATIONS_DIR: ${{ secrets.MIGRATIONS_DIR }}

@@ -51,9 +51,9 @@ You can view the [main.yml](.github/workflows/main.yml) for example of a full wo
 
 ![Screenshot of GitHub Secret Panel](images/Secrets.png)
 
-Lastly you'll also need to add your `SPACE_ID` and `MANAGEMENT_API_KEY` in the secrets tab of the settings on your repository.
+You'll also need to add your `SPACE_ID` and `MANAGEMENT_API_KEY` in the secrets tab of the settings on your repository. You can optionally add a `MIGRATIONS_DIR` secret if you're storing your migration scripts somewhere besides the migrations folder.
 
 License
 =======
 
-Copyright (c) 2019 Contentful GmbH. Code released under the MIT license. See [LICENSE](LICENSE) for further details.
+Copyright (c) 2020 Contentful GmbH. Code released under the MIT license. See [LICENSE](LICENSE) for further details.
