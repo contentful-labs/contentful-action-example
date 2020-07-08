@@ -3,6 +3,8 @@ Contentful Action Example
 
 An example application for how you can integrating content migrations in your continuous delivery pipeline using [Contentful's GitHub Action](contentful-labs).
 
+This specfic PR is here just to showcase the expected behavior of what happens when you make a PR.
+
 What is this about?
 =====
 
