@@ -13,8 +13,9 @@ jobs:
 
     - name: Contentful Migration
       id: migrate
-      uses: TillaTheHun0:fix/environment-name@v1
+      uses: TillaTheHun0/contentful-action@environment-name
       env: # Set the secret as an input
         SPACE_ID: ${{ secrets.SPACE_ID }}
         MANAGEMENT_API_KEY: ${{ secrets.MANAGEMENT_API_KEY }}
         MIGRATIONS_DIR: ${{ secrets.MIGRATIONS_DIR }}
+
