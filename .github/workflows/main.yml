@@ -23,6 +23,6 @@ jobs:
       uses: peter-evans/commit-comment@v1
       with:
         body: |
-          See changes to Contentful Enviroment [${{core.environmentName}} ][1]
+          See changes to Contentful Enviroment [${{environmentName}} ][1]
 
           [1]: ${{environmentUrl}}
