@@ -25,7 +25,7 @@ jobs:
     needs: build
     steps:
     - name: outputs
-     run: echo "${{needs.build.outputs}}"
+      run: echo "${{needs.build.outputs}}"
 
     - name: Create commit comment
       uses: peter-evans/commit-comment@v1
