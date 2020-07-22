@@ -19,6 +19,9 @@ jobs:
         MANAGEMENT_API_KEY: ${{ secrets.MANAGEMENT_API_KEY }}
         MIGRATIONS_DIR: ${{ secrets.MIGRATIONS_DIR }}
 
+  commit-message:
+    runs-on: ubuntu-latest
+    needs: build
     - name: Create commit comment
       uses: peter-evans/commit-comment@v1
       with:
