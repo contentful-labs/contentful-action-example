@@ -23,12 +23,14 @@ jobs:
 
     runs-on: ubuntu-latest
     needs: build
+    -name: outputs
+     run: echo "${{needs.build.outputs}}"
     steps:
     - name: Create commit comment
       uses: peter-evans/commit-comment@v1
       with:
         body: |
-          ${{needs.build.outputs.keys()}}
+          ${{needs.build.outputs}}
           ${{needs.build.outputs.environment-name}}
           See changes to Contentful Enviroment [${{ needs.build.outputs.environment-name }} ][1]
 
