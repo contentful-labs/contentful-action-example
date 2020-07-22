@@ -28,7 +28,8 @@ jobs:
       uses: peter-evans/commit-comment@v1
       with:
         body: |
-          ${{needs.build.outputs}}
+          ${{needs.build.outputs.keys()}}
+          ${{needs.build.outputs.environment-name}}
           See changes to Contentful Enviroment [${{ needs.build.outputs.environment-name }} ][1]
 
           [1]: ${{needs.build.outputs.environment-url}}
