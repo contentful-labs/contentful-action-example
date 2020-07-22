@@ -24,7 +24,7 @@ jobs:
     runs-on: ubuntu-latest
     needs: build
     steps:
-    -name: outputs
+    - name: outputs
      run: echo "${{needs.build.outputs}}"
 
     - name: Create commit comment
