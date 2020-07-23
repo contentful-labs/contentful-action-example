@@ -21,10 +21,8 @@ jobs:
 
     - name: output testing
       run: |
-          for each in "${{steps.migrate.outputs.*[*]}}"
-            do
-              echo "$each"
-            done
+          echo ${{steps.migrate.outputs.environment-name}}
+          echo ${{steps.migrate.outputs.environment-url}}
 
     - name: Create commit comment
       uses: peter-evans/commit-comment@v1
