@@ -20,7 +20,11 @@ jobs:
         MIGRATIONS_DIR: ${{ secrets.MIGRATIONS_DIR }}
 
     - name: output testing
-      run: echo ${{steps.migrate.outputs.*[*]}}
+      run: |
+          for each in "${{steps.migrate.outputs.*[*]}}"
+            do
+              echo "$each"
+            done
 
     - name: Create commit comment
       uses: peter-evans/commit-comment@v1
