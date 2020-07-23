@@ -1,7 +1,7 @@
 Contentful Action Example
 =====
 
-An example application for how you can integrating content migrations in your continuous delivery pipeline using [Contentful's GitHub Action](contentful-labs).
+An example application for how you can integrating content migrations in your continuous delivery pipeline using [Contentful's GitHub Action](https://github.com/contentful/contentful-action).
 
 What is this about?
 =====
