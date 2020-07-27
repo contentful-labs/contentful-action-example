@@ -47,4 +47,4 @@ jobs:
       uses: peter-evans/commit-comment@v1
       with:
         body: |
-          ${{ steps.hello.outputs.time }}
+          The time is ${{ steps.hello.outputs.time }}
