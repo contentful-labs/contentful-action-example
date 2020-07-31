@@ -9,8 +9,8 @@ jobs:
     name: Contentful Migration Example
     steps:
     - name: Check out code into the directory
-      uses: actions/checkout@v1
-
+      uses: actions/checkout@master
+      
     - name: Contentful Migration
       id: migrate
       uses: contentful/contentful-action@v1.3
