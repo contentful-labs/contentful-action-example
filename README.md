@@ -42,7 +42,7 @@ Since we're using GitHub Actions, we'll be able to use the existing [Contentful-
 ```yml
     - name: Contentful Migration
       id: migrate
-      uses: shy/contentful-action@master
+      uses: shy/contentful-action@main
       env: # Set the secret as an input
         SPACE_ID: ${{ secrets.SPACE_ID }}
         MANAGEMENT_API_KEY: ${{ secrets.MANAGEMENT_API_KEY }}
