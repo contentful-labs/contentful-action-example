@@ -13,8 +13,16 @@ jobs:
 
     - name: Contentful Migration
       id: migrate
-      uses: contentful/contentful-action@v1
+      uses: contentful/contentful-action@main
       env: # Set the secret as an input
         SPACE_ID: ${{ secrets.SPACE_ID }}
         MANAGEMENT_API_KEY: ${{ secrets.MANAGEMENT_API_KEY }}
         MIGRATIONS_DIR: ${{ secrets.MIGRATIONS_DIR }}
+
+    - name: Create commit comment
+      uses: peter-evans/commit-comment@v1
+      with:
+        body: |
+          See changes to the [${{steps.migrate.outputs.environment_name }} ][1] Environment on Contentful.
+
+          [1]: ${{steps.migrate.outputs.environment_url}}
