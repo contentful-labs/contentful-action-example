@@ -37,7 +37,7 @@ To use the continuous delivery pipeline of this project you need accounts for th
 
 #### The continuous delivery pipeline
 
-Since we're using GitHub Actions, we'll be able to use the existing [Contentful-Action]() repo. Just add the following code into your github workflow.
+Since we're using GitHub Actions, we'll be able to use the existing Contentful-Action repo. Just add the following code into your github workflow.
 
 ```yml
     - name: Contentful Migration
