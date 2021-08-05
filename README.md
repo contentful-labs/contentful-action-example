@@ -56,4 +56,4 @@ You'll also need to add your `SPACE_ID` and `MANAGEMENT_API_KEY` in the secrets 
 License
 =======
 
-Copyright (c) 2020 Contentful GmbH. Code released under the MIT license. See [LICENSE](LICENSE) for further details.
+Copyright (c) 2020 Contentful GmbH. Code released under the MIT license.
