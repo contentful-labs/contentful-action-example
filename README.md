@@ -1,16 +1,16 @@
 Contentful Action Example
 =====
 
-An example application for how you can integrating content migrations in your continuous delivery pipeline using [Contentful's GitHub Action](https://github.com/contentful/contentful-action).
+An example application for how you can integrate content migrations in your continuous delivery pipeline using [Contentful's GitHub Action](https://github.com/contentful/contentful-action).
 
 What is this about?
 =====
 
-This example contains a folder of Migration Scripts. Whenever a new script is added to this repo, it's evaluated against a Contentful space. If the migration is added via pull request, a new enviroment is created on Contentful and the migration is run against that. If a new script is added to master (either directly or via merging a PR) then a new enviroment is created, migrations are run against that enviroment and then the alias for master is updated to point to that new enviroment.
+This example contains a folder of Migration Scripts. Whenever a new script is added to this repo, it's evaluated against a Contentful space. If the migration is added via pull request, a new environment is created on Contentful and the migration is run against that. If a new script is added to master (either directly or via merging a PR) then a new environment is created, migrations are run against that environment and then the alias for master is updated to point to that new environment.
 
 You can read our [conceptual guide](https://www.contentful.com/developers/docs/concepts/deployment-pipeline/) on how to utilize Contentful Environments inside your continuous delivery pipeline.
 
-You can futher expand this example by integrating other GitHub actions, such as testing and deployment options.
+You can further expand this example by integrating other GitHub actions, such as testing and deployment options.
 
 Getting started
 =====
@@ -47,11 +47,11 @@ Since we're using GitHub Actions, we'll be able to use the existing [Contentful-
         SPACE_ID: ${{ secrets.SPACE_ID }}
         MANAGEMENT_API_KEY: ${{ secrets.MANAGEMENT_API_KEY }}
 ```
-You can view the [main.yml](.github/workflows/main.yml) for example of a full working confirguration.
+You can view the [main.yml](.github/workflows/main.yml) for example of a full working configuration.
 
 ![Screenshot of GitHub Secret Panel](images/Secrets.png)
 
-You'll also need to add your `SPACE_ID` and `MANAGEMENT_API_KEY` in the secrets tab of the settings on your repository. You can optionally add a `MIGRATIONS_DIR` secret if you're storing your migration scripts somewhere besides the migrations folder.
+You'll also need to add your `SPACE_ID` and `MANAGEMENT_API_KEY` in the secrets tab of the settings on your repository. You can optionally add a `MIGRATIONS_DIR` secret if you're storing your migration scripts somewhere besides the `migrations` folder.
 
 License
 =======
