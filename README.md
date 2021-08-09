@@ -1,7 +1,7 @@
 Contentful Action Example
 =====
 
-An example application for how you can integrate content migrations in your continuous delivery pipeline using [Contentful's GitHub Action](https://github.com/contentful/contentful-action).
+An example application for how you can integrate content migrations in your continuous delivery pipeline using [Contentful's GitHub Action](https://github.com/contentful-userland/contentful-action).
 
 What is this about?
 =====
@@ -37,15 +37,24 @@ To use the continuous delivery pipeline of this project you need accounts for th
 
 #### The continuous delivery pipeline
 
-Since we're using GitHub Actions, we'll be able to use the existing Contentful-Action repo. Just add the following code into your github workflow.
+Since we're using GitHub Actions, we'll be able to use the existing [Contentful-Action](https://github.com/contentful-userland/contentful-action) repo. Just add the following code into your github workflow.
 
 ```yml
     - name: Contentful Migration
       id: migrate
-      uses: shy/contentful-action@main
-      env: # Set the secret as an input
-        SPACE_ID: ${{ secrets.SPACE_ID }}
-        MANAGEMENT_API_KEY: ${{ secrets.MANAGEMENT_API_KEY }}
+      uses: contentful-userland/contentful-action@main
+      with:
+        # delete_feature: true
+        # set_alias: true
+        # master_pattern: "main-[YY]-[MM]-[DD]-[hh]-[mm]"
+        # feature_pattern: "sandbox-[branch]"
+        # version_field: versionCounter
+        # version_content_type: environmentVersion
+        # migrations_dir: contentful/migrations
+        space_id: ${{ secrets.SPACE_ID }}
+        management_api_key: ${{ secrets.MANAGEMENT_API_KEY }}
+      # env:
+        # LOG_LEVEL: verbose
 ```
 You can view the [main.yml](.github/workflows/main.yml) for example of a full working configuration.
 
